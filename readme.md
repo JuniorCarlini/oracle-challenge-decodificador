@@ -7,8 +7,9 @@
 
 **Exemplo:**
       
-    "gato" => "gaitober"
-    "gaitober" => "gato"
+  >"gato" => "gaitober"
+
+  >"gaitober" => "gato"
 
 
 #### Links Importantes:
@@ -16,9 +17,9 @@
 - [Deploy da Publicação](https://juniorcarlini.github.io/oracle-challenge-decodificador/)
 
 #### Prints da Aplicação:
-![Modo desktop - 1](assets\images\desktop-1.png)
 
-![Modo desktop - 2](assets\images\desktop-2.png)
+<img src="assets\images\desktop-1.png" align="top" width="91%" />
+<img src="assets\images\desktop-2.png" align="top" width="91%" />
 
 <p float="left">
   <img src="assets\images\mobile-1.png" align="top" width="30%" />
