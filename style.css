@@ -1,0 +1,359 @@
+:root {
+    --primary-color: #0A3871;
+    --secondary-color: #D8DFE8;
+    --background-color: #F3F5FC;
+    --white-color: #FFFFFF;
+    --gray-color: #343A40;
+    --placeholder-color: #868E96;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    text-rendering: optimizeLegibility;
+    background-color: var(--background-color);
+}
+
+input, textarea, button {
+    font-family: inherit;
+}
+
+body {
+    padding: 3% 3% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+} 
+
+.btn {
+    padding: 24px;
+    border-radius: 24px;
+    width: 100%;
+    min-width: 168px;
+    max-width: 328px;
+    font-size: 1.6rem;
+    transition: all .15s;
+}
+
+.btn.dark-blue {
+    background: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+}
+
+.btn.light-gray {
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn.white {
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-container {
+    width: 100%;
+    max-width: 680px;
+    margin-top: 32px;
+}
+
+.btn-encrypt-decrypt {
+    display: flex;
+}
+
+.btn-encrypt-decrypt>.btn:not(:last-child){
+    margin-right: 12px;
+}
+
+.btn-encrypt-decrypt>.btn:last-child{
+    margin-left: 12px;
+}
+
+@media (hover: hover) {
+    .btn:hover {
+        opacity: 0.7;
+        transform: scale(1.009);
+        cursor: pointer;
+    }
+}
+
+.btn:active {
+    transform: scale(1);
+    transform: translateY(1.5px);
+}
+
+.app-container {
+    display: flex;
+    height: 100%;
+    gap: 40px;
+}
+
+.wrap-input-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.input-message {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 18%;
+    padding-bottom: 32px;
+}
+
+header {
+    margin-left: 3%;
+}
+
+textarea {
+    border: none;
+    box-shadow: none;
+    min-height: 30vh;
+    height: 100%;
+    width: 100%;
+    max-width: 680px;
+    resize: none;
+    background: transparent;
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    color: var(--primary-color);
+}
+
+textarea::placeholder {
+    color: var(--placeholder-color);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 399px;
+    max-width: 680px;
+    height: 100%;
+    padding: 32px;
+    gap: 32px;
+    background: var(--white-color);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.msg-result {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.msg-result p {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
+
+.msg-result button {
+    margin-top: 32px;
+}
+
+.msg-not-found, .msg-copied {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.msg-not-found img {
+    margin-bottom: 32px;
+}
+
+.msg-not-found h3 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: var(--gray-color);
+}
+
+.msg-copied h3 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: var(--primary-color);
+}
+
+.msg-not-found p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--placeholder-color);
+    margin-top: 1.6rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    gap: 9px;
+    list-style: none;
+    font-size: 1.0rem;
+    color: var(--placeholder-color);
+}
+
+footer img {
+    height: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: all 0.15ms;
+}
+
+footer a:hover {
+    opacity: 0.7;
+    transform: scale(1.009);
+    cursor: pointer;
+}
+
+footer a:active {
+    transform: scale(1);
+    transform: translateY(1px);
+}
+
+footer a:link, footer a:visited {
+    color: var(--placeholder-color);
+}
+
+footer a:visited {
+    color: var(--primary-color);
+}
+
+.requirements {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.requirements img {
+    height: 1.8rem;
+}
+
+.requirements span {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--placeholder-color);
+}
+
+@media (min-width: 1920px) {
+    .input-message {
+        margin-left: 24%;
+    }
+}
+
+@media (max-width: 1023px) {
+    body {
+        padding: 5% 5% 2%;
+    }
+
+    :root {
+        font-size: 54%;
+    }
+
+    .btn {
+        padding: 21px;
+    }
+
+    .app-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    header {
+        margin: 12px 0 0;
+    }
+
+    .input-message {
+        margin: 0;
+        padding-bottom: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .result {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .wrap-input-header {
+        align-items: baseline;
+    }
+
+    .msg-not-found img {
+        display: none;
+    }
+
+    textarea::placeholder {
+        content: "Digite seu texto";
+    }
+
+    .btn-encrypt-decrypt>.btn:not(:last-child){
+        margin-right: 9px;
+    }
+    
+    .btn-encrypt-decrypt>.btn:last-child{
+        margin-left: 9px;
+    }
+}
+
+@media (max-width: 424px) {
+    textarea {
+        resize: horizontal;
+    }
+
+    .btn {
+        min-width: none;
+        max-width: none;
+    }
+
+    .btn-encrypt-decrypt {
+        flex-direction: column;
+    }
+    
+    .btn-encrypt-decrypt>.btn:not(:last-child){
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+    
+    .btn-encrypt-decrypt>.btn:last-child{
+        margin-left: 0;
+    }
+
+    footer {
+        padding-bottom: 3%;
+    }
+}
