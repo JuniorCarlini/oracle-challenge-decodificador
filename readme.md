@@ -13,7 +13,7 @@
 
 #### Links Importantes:
 - [Projeto no Figma](https://www.figma.com/design/c3sCL9FFhnoOyWrcrlL36Z/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=0-1&t=CpAm4DP7n6poPcto-1)
-- [Deploy da Publicação](#)
+- [Deploy da Publicação](https://juniorcarlini.github.io/oracle-challenge-decodificador/)
 
 #### Prints da Aplicação:
 ![Modo desktop - 1](assets\images\desktop-1.png)
